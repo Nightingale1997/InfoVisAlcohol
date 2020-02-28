@@ -1,8 +1,8 @@
 var chart = bb.generate({
     data: {
         columns: [
-	["Habitable Planets", 0.4],
-	["Uninhabitable Planets", 99.6]
+	["One third", 33.3],
+	["Three thirds", 66.6]
     ],
         type: "pie"
     },

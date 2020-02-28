@@ -46,6 +46,10 @@ p {
     color: rgb(94, 235, 52);
 }
 
+.redText {
+    color: red;
+}
+
 #header {
     font-size: 300%;
 
