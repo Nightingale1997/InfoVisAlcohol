@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/billboard.css" type="text/css" />
     <link rel="stylesheet" href="css/main.css" type="text/css" />
 
     <title>Information Visualization</title>
@@ -12,14 +13,26 @@
 <body class="container">
     <main class="container">
         <section class="slide parallax" id="slide1">
-            
-           
+            <section class="bottomPadding">
+                <article>
+                    <h1 id="header">Where are the <span class="greenText">aliens</span>?</h1>
+                    <h2>Exploring the <strong>Fermi paradox</strong>
+                    </h2>
+                </article>
+                <article><img id="earth" src="img/Earth.svg">
+                    <h1>This is earth</h1>
+                    <h2>As far as we know, the only planet with life in the universe </h2>
+                </article>
+            </section>
         </section>
         <section class="slide" id="slide2">
-            <h1 id="header">Where did all the  <span class="greenText">aliens</span> go?</h1>
-                <h2>Exploring the<strong>Fermi paradox</strong>
-                </h2>
-            <p>Test</p>
+            <article class="bottomPadding">
+                <h1 id="intro">Earth is really <span class="greenText">unique</span></h1>
+                <div class="sideText">
+                    <p>According to data collected from the Kepler space mission, only 0.4% of all planets are potentially habitable.</p>
+                </div>
+                <div class="pieChart" id="pieChart"></div>
+            </article>
         </section>
         <section class="slide parallax" id="slide3">
             <h1>No JavaScript Required</h1>
@@ -27,5 +40,14 @@
         <section class="slide" id="slide4">
             <h1>End</h1>
         </section>
+        <!-- Step 1) Load D3.js -->
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+
+        <!-- Step 2) Load billboard.js with style -->
+        <script src="js/billboard.js"></script>
+        <script src="js/graphs.js"></script>
     </main>
-</body></html>
+
+</body>
+
+</html>
