@@ -1,0 +1,202 @@
+.wrapper .beercontainer {
+  width: 200px;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.02);
+  border: 10px solid rgba(0, 0, 0, 0.03);
+  border-bottom-width: 15px;
+  border-top: none;
+  position: relative;
+  transform: rotate(-30deg);
+  animation: tilt 10s forwards;
+}
+.wrapper .beercontainer .handle {
+  height: 200px;
+  width: 40px;
+  position: absolute;
+  right: -65px;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  border-radius: 0 20px 20px 0;
+  border: 15px solid rgba(0, 0, 0, 0.05);
+  border-left: none;
+}
+.wrapper .beercontainer .glass {
+  width: 200px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.wrapper .beercontainer .glass:after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 150px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  z-index: 100;
+  margin: auto;
+  top: 0px;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  box-shadow: -50px 0 0 0 rgba(0, 0, 0, 0.05), 50px 0 0 0 rgba(0, 0, 0, 0.05);
+}
+.wrapper .beercontainer .glass .drink {
+  width: 500px;
+  height: 300px;
+  background: #f7a900;
+  position: absolute;
+  bottom: -300px;
+  left: -250px;
+  right: 0;
+  transform: rotate(30deg);
+  animation: pour 10s forwards;
+  bottom: -40px;
+  border-top: 40px solid white;
+  transform: rotate(0deg);
+}
+.wrapper .beercontainer .glass .drink .bubbles {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  right: -50%;
+  width: 10px;
+  height: 10px;
+  background: red;
+  margin: auto;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  animation: bubble1 1s infinite;
+}
+
+.wrapper .beercontainer .glass .drink .bubbles:nth-of-type(20) {
+  animation-delay: 0.73347198s;
+  right: -80%;
+}
+.wrapper .beercontainer .glass .drink .bubbles:nth-of-type(19) {
+  animation-delay: 0.67573018s;
+  right: -76%;
+}
+.wrapper .beercontainer .glass .drink .bubbles:nth-of-type(18) {
+  animation-delay: 0.9635278s;
+  right: -72%;
+}
+.wrapper .beercontainer .glass .drink .bubbles:nth-of-type(17) {
+  animation-delay: 0.80205549s;
+  right: -68%;
+}
+.wrapper .beercontainer .glass .drink .bubbles:nth-of-type(16) {
+  animation-delay: 0.21765563s;
+  right: -64%;
+}
+.wrapper .beercontainer .glass .drink .bubbles:nth-of-type(15) {
+  animation-delay: 0.90507397s;
+  right: -60%;
+}
+.wrapper .beercontainer .glass .drink .bubbles:nth-of-type(14) {
+  animation-delay: 0.43243626s;
+  right: -56%;
+}
+.wrapper .beercontainer .glass .drink .bubbles:nth-of-type(13) {
+  animation-delay: 0.20236431s;
+  right: -52%;
+}
+.wrapper .beercontainer .glass .drink .bubbles:nth-of-type(12) {
+  animation-delay: 0.11922937s;
+  right: -48%;
+}
+.wrapper .beercontainer .glass .drink .bubbles:nth-of-type(11) {
+  animation-delay: 0.98098981s;
+  right: -44%;
+}
+.wrapper .beercontainer .glass .drink .bubbles:nth-of-type(10) {
+  animation-delay: 0.55352942s;
+  right: -40%;
+}
+.wrapper .beercontainer .glass .drink .bubbles:nth-of-type(9) {
+  animation-delay: 0.5523233s;
+  right: -36%;
+}
+.wrapper .beercontainer .glass .drink .bubbles:nth-of-type(8) {
+  animation-delay: 0.29474757s;
+  right: -32%;
+}
+.wrapper .beercontainer .glass .drink .bubbles:nth-of-type(7) {
+  animation-delay: 0.40536851s;
+  right: -28%;
+}
+.wrapper .beercontainer .glass .drink .bubbles:nth-of-type(6) {
+  animation-delay: 0.96231663s;
+  right: -24%;
+}
+.wrapper .beercontainer .glass .drink .bubbles:nth-of-type(5) {
+  animation-delay: 0.09084636s;
+  right: -20%;
+}
+.wrapper .beercontainer .glass .drink .bubbles:nth-of-type(4) {
+  animation-delay: 0.89299792s;
+  right: -16%;
+}
+.wrapper .beercontainer .glass .drink .bubbles:nth-of-type(3) {
+  animation-delay: 0.51803873s;
+  right: -12%;
+}
+.wrapper .beercontainer .glass .drink .bubbles:nth-of-type(2) {
+  animation-delay: 0.87628065s;
+  right: -8%;
+}
+.wrapper .beercontainer .glass .drink .bubbles:nth-of-type(1) {
+  animation-delay: 0.74215924s;
+  right: -4%;
+}
+@keyframes pour {
+  0% {
+    bottom: -300px;
+    border-top: 1px solid white;
+  }
+  30% {
+    transform: rotate(30deg);
+  }
+  45% {
+    bottom: -160px;
+    border-top: 40px solid white;
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  90% {
+    bottom: -160px;
+    border-top: 40px solid white;
+    transform: rotate(0deg);
+  }
+100% {
+    bottom: -160px;
+    border-top: 40px solid white;
+    transform: rotate(0deg);
+  }
+
+}
+@keyframes tilt {
+  0% {
+    transform: rotate(-30deg);
+  }
+  30% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+    100% {
+    transform: rotate(0deg);
+  }
+
+}
+@keyframes bubble1 {
+  0% {
+    bottom: 0%;
+  }
+  99.999% {
+    bottom: 100%;
+  }
+}
