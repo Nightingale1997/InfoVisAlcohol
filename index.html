@@ -22,7 +22,7 @@
             <h1>Alcohol consumption</h1>
             <div class="beercountry">
                 <h2>Europe</h2>
-                <h1 id="worldnumber"><span id="worldnumbertext">9.45</span><span class="small">/APC</span></h1>
+                <h1 class="worldnumber"><span id="worldnumbertext">9.45</span><span class="small">/APC</span></h1>
                 <div class='wrapper'>
                     <div class='beercontainer'>
                         <div class='handle'></div>
@@ -53,10 +53,14 @@
                     </div>
                 </div>
 
-                <button id="worldboth" class="leftcorner button active">Both</button><button id="worldmen" class="button">Men</button><button id="worldwomen" class="button rightcorner">Women</button>
+                <button id="worldboth" class="leftcorner button active">Both</button>
+                <button id="worldmen" class="button">Men</button>
+                <button id="worldwomen" class="button rightcorner">Women</button>
             </div>
 
             <div class="beercountry">
+                <h2>Finland</h2>
+                <h1 class="worldnumber"><span id="finlandnumbertext">10.7</span><span class="small">/APC</span></h1>
                 <div class='wrapper'>
                     <div class='beercontainer'>
                         <div class='handle'></div>
@@ -86,10 +90,15 @@
                         </div>
                     </div>
                 </div>
-                <h2>Europeans drink on average X litres</h2>
+
+                <button id="finlandboth" class="leftcorner button active">Both</button>
+                <button id="finlandmen" class="button">Men</button>
+                <button id="finlandwomen" class="button rightcorner">Women</button>
             </div>
 
             <div class="beercountry">
+                <h2>Sweden</h2>
+                <h1 class="worldnumber"><span id="swedennumbertext">9.2</span><span class="small">/APC</span></h1>
                 <div class='wrapper'>
                     <div class='beercontainer'>
                         <div class='handle'></div>
@@ -119,14 +128,19 @@
                         </div>
                     </div>
                 </div>
-                <h2>Europeans drink on average X litres</h2>
+
+                <button id="swedenboth" class="leftcorner button active">Both</button>
+                <button id="swedenmen" class="button">Men</button>
+                <button id="swedenwomen" class="button rightcorner">Women</button>
             </div>
 
             <div class="beercountry">
+                <h2>Iceland</h2>
+                <h1 class="worldnumber"><span id="icelandnumbertext">9.1</span><span class="small">/APC</span></h1>
                 <div class='wrapper'>
                     <div class='beercontainer'>
                         <div class='handle'></div>
-                        <div class='glass glass4'>
+                        <div class='glass'>
                             <div class='drink drink4'>
                                 <div class='bubbles'></div>
                                 <div class='bubbles'></div>
@@ -152,10 +166,15 @@
                         </div>
                     </div>
                 </div>
-                <h2>Europeans drink on average X litres</h2>
+
+                <button id="icelandboth" class="leftcorner button active">Both</button>
+                <button id="icelandmen" class="button">Men</button>
+                <button id="icelandwomen" class="button rightcorner">Women</button>
             </div>
 
             <div class="beercountry">
+                <h2>Norway</h2>
+                <h1 class="worldnumber"><span id="norwaynumbertext">7.5</span><span class="small">/APC</span></h1>
                 <div class='wrapper'>
                     <div class='beercontainer'>
                         <div class='handle'></div>
@@ -185,12 +204,14 @@
                         </div>
                     </div>
                 </div>
-                <h2>Europeans drink on average X litres</h2>
+
+                <button id="norwayboth" class="leftcorner button active">Both</button>
+                <button id="norwaymen" class="button">Men</button>
+                <button id="norwaywomen" class="button rightcorner">Women</button>
             </div>
 
 
         </article>
-    </section>
     </section>
     <section>
         <div id="regions_div" style="width: 900px; height: 500px;"></div>
@@ -213,11 +234,6 @@
     <!-- Step 3) Load billboard.js with style -->
     <script src="js/billboard.js"></script>
     <script src="js/graphs.js"></script>
-
-
-
-    </main>
-
 </body>
 
 </html>
