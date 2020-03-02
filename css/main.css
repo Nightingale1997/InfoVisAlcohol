@@ -1,5 +1,5 @@
 body {
-    background-color:beige;
+    background-color: beige;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: black;
@@ -17,7 +17,10 @@ h2,
 p {
     margin-bottom: 0;
     font-weight: lighter;
+}
 
+h1 {
+    font-size: 300%;
 }
 
 .bottomPadding {
@@ -58,57 +61,75 @@ p {
     margin-top: 475px;
 }
 
-#consumption{
-    margin-top:450px;
+#consumption {
+    margin-top: 450px;
     width: 100%;
-    animation: fadein 10s forwards;
     text-align: center;
 }
 
-#consumption h1{
+#consumption h1 {
     margin-bottom: 30px;
 }
-.beercountry{
-    width:19%;
-    display:inline-block;
+
+.beercountry {
+    width: 18%;
+    margin-right: 1%;
+    display: inline-block;
+    position: relative;
+    background: #e8d8be;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
 }
 
-.beercountry h2, .wrapper{
-    width:80%;
+.small {
+    font-size: 50%;
+}
+
+.beercountry h1 {
+    opacity: 0;
+    margin: 0;
+}
+
+.beercountry h2 {
+    width: 80%;
     padding-left: 10%;
-    padding-right:10%;
+    padding-right: 10%;
     text-align: center;
+    font-size: 300%;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 }
 
-.beercountry .wrapper{
-        padding-left: 33.3%;
-}
-
-
-@keyframes fadein {
-  0% {
-    color:beige;
-  }
-100% {
-    color:black;
-  }
+.beercountry .wrapper {
+    padding-left: 25%;
 }
 
 .button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
     cursor: pointer;
-    width:33%;
+    width: 33.33%;
 }
 
-.active{
-     background-color: #3d8c41;
+.leftcorner {
+    border-radius: 0 0 0 10px;
+}
+
+.rightcorner {
+    border-radius: 0 0 10px 0;
+}
+
+.active {
+    background-color: #3d8c41;
 }
 
 .pieChart {
@@ -120,7 +141,7 @@ p {
     text-align: left;
 }
 
-
-
-
-
+.beercontainer {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
