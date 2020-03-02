@@ -1,9 +1,8 @@
 body {
-    background-attachment: fixed;
-    background-image: url(../img/stardust.png);
+    background-color:beige;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    color: white;
+    color: black;
     margin: 0;
     padding: 0;
 
@@ -23,6 +22,7 @@ p {
 
 .bottomPadding {
     margin-bottom: 150px;
+    width: 100%;
 }
 
 .sideText {
@@ -44,10 +44,12 @@ p {
 
 .greenText {
     color: rgb(94, 235, 52);
+    font-weight: bold;
 }
 
 .redText {
     color: red;
+    font-weight: bold;
 }
 
 #header {
@@ -56,9 +58,42 @@ p {
     margin-top: 475px;
 }
 
-#earth {
-    margin-top: 500px;
+#consumption{
+    margin-top:450px;
+    width: 100%;
+    animation: fadein 10s forwards;
+    text-align: center;
 }
+
+#consumption h1{
+    margin-bottom: 30px;
+}
+.beercountry{
+    width:19%;
+    display:inline-block;
+}
+
+.beercountry h2, .wrapper{
+    width:80%;
+    padding-left: 10%;
+    padding-right:10%;
+    text-align: center;
+}
+
+.beercountry .wrapper{
+        padding-left: 33.3%;
+}
+
+
+@keyframes fadein {
+  0% {
+    color:beige;
+  }
+100% {
+    color:black;
+  }
+}
+
 
 .pieChart {
     color: black;
@@ -100,7 +135,7 @@ p {
     position: relative;
     display: flex;
     justify-content: center;
-    color: white;
+    color: black;
     box-shadow: 0 0 5px 1px black;
 }
 
@@ -128,7 +163,7 @@ p {
 }
 
 #slide1::before {
-    background-image: url(../img/stardust.png);
+background-color:beige;
 }
 
 #slide3::before {
