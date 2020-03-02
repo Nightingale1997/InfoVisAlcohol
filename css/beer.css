@@ -7,7 +7,7 @@
     border-top: none;
     position: relative;
     transform: rotate(-30deg);
-    animation: tilt 10s forwards;
+    /*animation: tilt 10s forwards;*/
 }
 
 .wrapper .beercontainer .handle {
@@ -55,27 +55,12 @@
     left: -125px;
     right: 0;
     transform: rotate(30deg);
-    animation: pour 10s forwards;
+    /*animation: pour 10s forwards;*/
     bottom: -20px;
     border-top: 20px solid white;
     transform: rotate(0deg);
 }
 
-.wrapper2 .beercontainer2 .glass2 .drink2 {
-    animation: pour2 10s forwards;
-}
-
-.wrapper3 .beercontainer3 .glass3 .drink3 {
-    animation: pour3 10s forwards;
-}
-
-.wrapper4 .beercontainer4 .glass4 .drink4 {
-    animation: pour4 10s forwards;
-}
-
-.wrapper5 .beercontainer5 .glass5 .drink5 {
-    animation: pour5 10s forwards;
-}
 
 .wrapper .beercontainer .glass .drink .bubbles {
     position: absolute;
@@ -202,7 +187,7 @@
     }
 
     45% {
-        bottom: -20px;
+        bottom: -78.5755814px;
         border-top: 20px solid white;
     }
 
@@ -211,14 +196,15 @@
     }
 
     90% {
-        bottom: -20px;
+        bottom: -78.5755814px;
         border-top: 20px solid white;
         transform: rotate(0deg);
     }
 
     100% {
-        bottom: -20px;
+        bottom: -78.5755814px;
         border-top: 20px solid white;
+        transform: rotate(0deg);
         transform: rotate(0deg);
     }
 
@@ -235,7 +221,7 @@
     }
 
     45% {
-        bottom: -70px;
+        bottom: -69.12790698px;
         border-top: 20px solid white;
     }
 
@@ -244,13 +230,13 @@
     }
 
     90% {
-        bottom: -70px;
+        bottom: -69.12790698px;
         border-top: 20px solid white;
         transform: rotate(0deg);
     }
 
     100% {
-        bottom: -70px;
+        bottom: -69.12790698px;
         border-top: 20px solid white;
         transform: rotate(0deg);
     }
@@ -334,7 +320,7 @@
     }
 
     45% {
-        bottom: -160px;
+        bottom: -150px;
         border-top: 20px solid white;
     }
 
@@ -343,13 +329,13 @@
     }
 
     90% {
-        bottom: -160px;
+        bottom: -150px;
         border-top: 20px solid white;
         transform: rotate(0deg);
     }
 
     100% {
-        bottom: -160px;
+        bottom: -150px;
         border-top: 20px solid white;
         transform: rotate(0deg);
     }
@@ -358,11 +344,11 @@
 
 @keyframes tilt {
     0% {
-        transform: rotate(-30deg);
+        transform: rotate(-15deg);
     }
 
     30% {
-        transform: rotate(-30deg);
+        transform: rotate(-15deg);
     }
 
     50% {
