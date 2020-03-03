@@ -168,6 +168,8 @@ $(document).ready(function () {
         $("#norwaywomen").addClass("active");
         $("#norwaynumbertext").text("3.2");
     });
-
-
 });
+
+AOS.init({
+    duration: 1200,
+})

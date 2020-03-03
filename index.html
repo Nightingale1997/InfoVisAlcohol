@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/billboard.css" type="text/css" />
     <link rel="stylesheet" href="css/beer.css" type="text/css" />
     <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
     <title>Information Visualization</title>
@@ -17,6 +18,22 @@
         <article>
             <h1 id="header">The Nordic Monopolies</h1>
             <h2><span class="greenText">Role models</span> or <span class="redText">Nanny States</span>?</h2>
+        </article>
+        <article>
+            <div class="item" data-aos="fade-up">1</div>
+            <div class="item" data-aos="fade-down">2</div>
+            <div class="item" data-aos="fade-right">3</div>
+            <div class="item" data-aos="fade-left">4</div>
+
+            <div class="item" data-aos="zoom-in">5</div>
+            <div class="item" data-aos="zoom-out">6</div>
+
+            <div class="item" data-aos="slide-up">7</div>
+
+            <div class="item" data-aos="flip-up">8</div>
+            <div class="item" data-aos="flip-down">9</div>
+            <div class="item" data-aos="flip-right">10</div>
+            <div class="item" data-aos="flip-left">11</div>
         </article>
         <article id="consumption">
             <h1>Alcohol consumption</h1>
@@ -214,7 +231,7 @@
         </article>
     </section>
     <section class="bottomPadding">
-         <h1> Alcohol Monopolies introduced to nordic countries</h1>
+        <h1> Alcohol Monopolies introduced to nordic countries</h1>
         <div id="regions_div" style="width: 900px; height: 500px;"></div>
     </section>
     <article class="bottomPadding">
@@ -235,6 +252,12 @@
     <!-- Step 3) Load billboard.js with style -->
     <script src="js/billboard.js"></script>
     <script src="js/graphs.js"></script>
+
+    <!-- animation scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
