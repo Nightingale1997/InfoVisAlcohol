@@ -10,10 +10,10 @@ google.charts.setOnLoadCallback(drawRegionsMap);
 function drawRegionsMap() {
     var data = google.visualization.arrayToDataTable([
           ['Country', 'Monopolies since', {role: 'tooltip', p:{html:true}}],
-          ['Sweden', 1905, '<ul><li>Monopolies introduced in: 1905</li><li>Minimum Age for legal purchase:18 years at a bar and 20 at a store</li></ul>'],
-          ['Norway', 1919, '<p> In 1919 Norway introduced <br> its monopolies and limited <br> the access to alcohol.</p>'],
-          ['Iceland', 1915, '<p> In 1915 Iceland introduced <br> its monopolies and limited <br> the access to alcohol.</p>'],
-          ['Finland', 1933, '<p> In 1933 Finland introduced <br> its monopolies and limited <br> the access to alcohol.</p>']
+          ['Sweden', 1905, '<ul><li><b>Monopolies introduced in:</b> 1905</li><li><b>Minimum legal age for purchase:</b>18 years at bars and 20 at stores</li></ul>'],
+          ['Norway', 1919, '<ul><li><b>Monopolies introduced in:</b> 1919</li><li><b>Minimum legal age for  purchase:</b>18 years at bars and 20 at stores</li></ul>'],
+          ['Iceland', 1915, '<ul><li><b>Monopolies introduced in:</b> 1915</li><li><b>Minimum legal age for  purchase:</b>20 years at all locations</li></ul>'],
+          ['Finland', 1933, '<ul><li><b>Monopolies introduced in:</b> 1933</li><li><b>Minimum legal age for  purchase:</b>18 years at bars and 20 at stores</li></ul>']
         ]);
 
     var options = {
