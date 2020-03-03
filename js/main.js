@@ -20,6 +20,21 @@ $.fn.isOnScreen = function () {
 var animationtrigger = true;
 
 $(document).ready(function () {
+    
+    
+    //Filthy hack to delete commas in map by attempting to remove them every millisecond
+       function first(){
+        $("text").each(function() {
+    var text = $(this).text();
+    text = text.replace(",", "");
+    $(this).text(text); 
+    });
+    }
+
+    window.setInterval(first, 1);
+ 
+                       
+    
     $(window).scroll(function () {
         if (animationtrigger) {
             if ($('#consumption').isOnScreen()) {
