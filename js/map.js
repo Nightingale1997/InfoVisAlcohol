@@ -21,13 +21,15 @@ function drawRegionsMap() {
         colorAxis: {
             colors: ['#42b3f5', '#217aad', '#0f4b6e']
         },
-        datalessRegionColor: 'white',
+        datalessRegionColor: '#e8d8be',
         legend: {
             numberFormat: '#'
         },
          tooltip:{
              isHtml: true
-         }
+         },
+        backgroundColor: '#f5f5dc',
+        
     };
 
     var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
