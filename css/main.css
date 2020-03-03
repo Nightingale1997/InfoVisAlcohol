@@ -166,3 +166,7 @@ h1 {
     padding-top: 75px;
     text-align: center;
   }
+
+  .item p{
+      font-size: 25px;
+  }
