@@ -9,11 +9,11 @@ google.charts.setOnLoadCallback(drawRegionsMap);
 
 function drawRegionsMap() {
     var data = google.visualization.arrayToDataTable([
-          ['Country', 'Monopolies since'],
-          ['Sweden', 1905],
-          ['Norway', 1919],
-          ['Iceland', 1915],
-          ['Finland', 1933]
+          ['Country', 'Monopolies since', {role: 'tooltip', p:{html:true}}],
+          ['Sweden', 1905, '<p> In 1905 Sweden introduced <br> its monopolies and limited <br> the access to alcohol.</p>'],
+          ['Norway', 1919, '<p> In 1919 Norway introduced <br> its monopolies and limited <br> the access to alcohol.</p>'],
+          ['Iceland', 1915, '<p> In 1915 Iceland introduced <br> its monopolies and limited <br> the access to alcohol.</p>'],
+          ['Finland', 1933, '<p> In 1933 Finland introduced <br> its monopolies and limited <br> the access to alcohol.</p>']
         ]);
 
     var options = {
@@ -24,7 +24,10 @@ function drawRegionsMap() {
         datalessRegionColor: 'white',
         legend: {
             numberFormat: '#'
-        }
+        },
+         tooltip:{
+             isHtml: true
+         }
     };
 
     var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
