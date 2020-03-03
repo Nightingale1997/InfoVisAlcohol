@@ -1,5 +1,5 @@
 .wrapper .beercontainer {
-    width: 45%;
+    width: 65%;
     height: 150px;
     background: rgba(0, 0, 0, 0.02);
     border: 10px solid rgba(0, 0, 0, 0.03);
@@ -47,7 +47,7 @@
 }
 
 .wrapper .beercontainer .glass .drink {
-    width: 300%;
+    width: 350%;
     height: 150px;
     background: #f7a900;
     position: absolute;
@@ -369,5 +369,14 @@
 
     99.999% {
         bottom: 100%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+  .wrapper .beercontainer {
+    width: 45%;
+    }
+    .wrapper .beercontainer .glass .drink {
+    width: 300%;
     }
 }
